@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+  background-color:lightcoral;
+}
+.container{
+  background-color: #F0F0F0;
+  width:400px;
+  margin: 20px auto;
+}
+
+.title{
+  background-color: red;
+  padding:20px 20px 30px 20px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ), url(https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size:cover;
+  background-position:center;
+  background-repeat:none;
+  color:white;
+  letter-spacing: 2px;
+}  
+
+form{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto;
+  grid-gap:10px;
+  padding: 20px
+}
+.form-field{
+  display:flex;
+  flex-direction:column;
+}
+
+input[type="text"],input[type="email"]{
+  height: 2.4em;
+  font-size:1em;
+  padding-left: 5px;
+  outline:none;
+  border: none;
+  border-radius: 5px;
+}
+input[type="text"]:focus,input[type="email"]:focus{
+  border: 2px solid rgba(98, 147, 173,0.5);
+}
+label{
+  font-size:1.2em;
+  margin-bottom: 5px;
+}
+textarea{
+  resize:none;
+  font-size:1em;
+  padding: 6px 5px;
+  outline:none;
+  border: none;
+  border-radius: 5px;
+}
+textarea:focus{
+  border: 2px solid rgba(98, 147, 173,0.5);
+}
+.btn{
+  display:flex;
+  align-items:flex-end;
+}
+input[type="submit"]{
+  padding:6px 15px;
+  outline:none;
+  border: none;
+  border-radius: 5px;
+  margin-top:10px;
+  background-color: #000;
+  color:white;
+}
+
+
+@media (max-width:415px){
+  .container{
+  background-color: #F0F0F0;
+  width:100%;
+  margin: 20px auto;
+}
+}
+
+.about{
+  text-align: center;
+}
+.about .row{
+  display: flex;
+  align-items: center;
+  gap:2rem;
+  flex-wrap: wrap;
+  padding:2rem 0;
+  padding-bottom: 3rem;
+}
+
+
+.about .row .content{
+  flex:1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color:rgb(19, 143, 143);
+}
+
+.about .row .content p{
+  font-size: 1.5rem;
+  color:rgb(245, 239, 239);
+  padding:.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background:url('https://media.istockphoto.com/photos/flowers-composition-yellow-and-purple-flowers-on-white-background-picture-id1127776025?k=20&m=1127776025&s=612x612&w=0&h=o_ImZwb87lyLB3LKVcdu6rOf-dqmzSE6xQ0jUjZ1QQI=') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  max-width: 50rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  color:#333;
+}
+
+.home .content span{
+  font-size: 3.5rem;
+  color:var(--pink);
+  padding:1rem 0;
+  line-height: 1.5;
+}
+
+.home .content p{
+  font-size: 1.5rem;
+  color:#999;
+  padding:1rem 0;
+  line-height: 1.5;
+}
